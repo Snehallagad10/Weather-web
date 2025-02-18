@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+<div class="backgorund">
+    <div class="weather-container">
+        <!-- Left Panel -->
+        <div class="left-panel">
+            <div class="search-container">
+                <input type="text" placeholder="Search for places..." class="search-box" id="search-box">
+                <button class="search-btn">🔍</button>
+            </div>
+
+            <div class="weather-icon">
+                <img id="weather-icon" src="sun-rain.png" alt="Weather">
+            </div>
+            
+            <h1 id="temperature">12°C</h1>
+            <p id="day-time">Monday, 16:00</p>
+            <p id="weather-description">Mostly Cloudy</p>
+            <p id="rain-chance">Rain - 30%</p>
+
+            <div class="location">
+                <img src="location-icon.png" alt="">
+                <span>New York, NY, USA</span>
+            </div>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <div class="tabs">
+                <span class="active">Weekly-forecast</span>
+               
+            </div>
+
+            <!-- Weekly Forecast -->
+            <div class="week-forecast">
+                <div class="day-card">
+                    <p>Sunday</p>
+                    <img src="sunny.png" alt="">
+                    <p></p>
+                </div>
+                <div class="day-card">
+                    <p>Monday</p>
+                    <img src="rainy.png" alt="">
+                    <p></p>
+                </div>
+                <div class="day-card">
+                    <p>Tuesday</p>
+                    <img src="cloudy.png" alt="">
+                    <p></p>
+                </div>
+                <div class="day-card">
+                    <p>Wednesday</p>
+                    <img src="rainy.png" alt="">
+                    <p></p>
+                </div>
+                <div class="day-card">
+                    <p>Thursday</p>
+                    <img src="windy.png" alt="">
+                    <p></p>
+                </div>
+                <div class="day-card">
+                    <p>Friday</p>
+                    <img src="sunny.png" alt="">
+                    <p></p>
+                </div>
+                <div class="day-card">
+                    <p>Sat</p>
+                    <img src="sunny.png" alt="">
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Today's Highlights -->
+            <h2>Today's Highlights</h2>
+            <div class="highlights">
+                <div class="highlight-box">
+                    <h3>UV Index</h3>
+                    <p class="uv-index">5</p>
+                </div>
+                <div class="highlight-box">
+                    <h3>Wind Status</h3>
+                    <p class="wind-speed">7.7 km/h</p>
+                </div>
+                <div class="highlight-box">
+                    <h3>Sunrise & Sunset</h3>
+                    <p>6:35 AM - 5:42 PM</p>
+                </div>
+                <div class="highlight-box">
+                    <h3>Humidity</h3>
+                    <p class="humidity">12%</p>
+                </div>
+                <div class="highlight-box">
+                    <h3>Visibility</h3>
+                    <p class="visibility">5.2 km</p>
+                </div>
+                <div class="highlight-box">
+                    <h3>Air Quality</h3>
+                    <p class="air-quality">105 (Unhealthy)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
